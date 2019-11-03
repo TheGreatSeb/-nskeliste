@@ -11,9 +11,11 @@
   }
 
 .header {
-    background-color: #e8f1ff;
-    box-shadow: 0px 2px 10px 1px rgba(190, 158, 158, 0.2);
-    border-radius: 15px;
+    background-color: #b3b3b3;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px;
 }
 
 .footer {
@@ -61,7 +63,7 @@ a:link {
   }
   
   a:visited {
-    color: darkgray;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
   }
