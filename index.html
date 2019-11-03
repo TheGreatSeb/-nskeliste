@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sebs Ønskeliste</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+</head>
+<body style="margin: 0;margin-left: 10%; margin-right: 10%;">
+    <div class="header">
+        <h1>
+            Sebs Ønskeliste 2019
+        </h1>
+        <h2>
+            Ønskelisten indeholder ønsker til gaver til både min 20 års fødselsdag samt til jul.
+        </h2>
+    </div>
+
+    <div class="main">
+        <div class="spacer50"></div>
+        <div class="row">
+            <div class="column">
+                <h3>Nyt Ikea Skrivebord</h2>
+                    <p>
+                        Jeg ønsker mig et nyt skrivebord fra Ikea, det er et skrivebord som bliver samlet fra flere forskellige dele. Delene kan ses i listen under her. OBS du kan klikke på produkterne for at se produkt siden for produktet.
+                    </p>
+                <ul>
+                    <li><p><a href="https://www.ikea.com/dk/da/p/alex-skuffeelement-hvid-10192824/" target="_blank">2x ALEX Skuffeelement, hvid - 500kr /stk</a></p></li>
+                    <li><p><a href="https://www.ikea.com/dk/da/p/karlby-bordplade-valnoddetrae-finer-30335191/" target="_blank">KARLBY Bordplade, valnøddetræ, finer, 186x3.8 cm - 799kr</a></p></li>
+                    <li><p><a href="https://www.ikea.com/dk/da/p/capita-ben-rustfrit-stal-30244346/" target="_blank">2x CAPITA Ben, 8 cm, rustfrit stål - 89kr /stk</a></p></li>
+                    <li><p><a href="https://www.ikea.com/dk/da/p/gerton-ben-kan-indstilles-i-hojden-forkromet-60261626/" target="_blank">GERTON Ben - 150kr</a></p></li>
+                </ul>
+                <p>
+                    Hele skrivebordet kommer til at koste omkring 2100 kr.
+                </p>
+            </div>
+            <div class="column">
+                <div class="gallery">
+                    <img id="myImg" src="billeder/alex.JPG" alt="ALEX Skuffeelement, hvid">
+                    <div class="desc">ALEX Skuffeelement</div>
+                </div>
+                <div class="gallery">
+                    <img id="myImg" src="billeder/bordplade.JPG" alt="KARLBY Bordplade, valnøddetræ, finer, 186x3.8 cmd">
+                    <div class="desc">KARLBY Bordplade</div>
+                </div>
+                <div class="gallery">
+                    <img id="myImg" src="billeder/småben.JPG" alt="CAPITA Ben, 8 cm, rustfrit stål">
+                    <div class="desc">CAPITA Ben</div>
+                </div>
+                <div class="gallery">
+                    <img id="myImg" src="billeder/ben.JPG" alt="GERTON Ben">
+                    <div class="desc">GERTON Ben</div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer50"></div>
+        <div class="row">
+            <div class="column">
+                <h3>hey</h3>
+            </div>
+            <div class="column">
+                <div class="gallery">
+                    <img src="billeder/" alt="picture not found">
+                    <div class="desc">Ønske</div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+      
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+      
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+</div>
+
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} 
+</script>
+</body>
+</html>

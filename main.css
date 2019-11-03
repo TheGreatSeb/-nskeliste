@@ -1,0 +1,183 @@
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.header {
+    background-color: #e8f1ff;
+    box-shadow: 0px 2px 10px 1px rgba(190, 158, 158, 0.2);
+    border-radius: 15px;
+}
+
+.main {
+    max-width: 75%;
+    display: inline;
+}
+
+.spacer50 {
+    height: 50px;
+}
+
+.spacer100 {
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Links */
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: darkgray;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: darkred;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: darkred;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+/*Gallery */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    width: 180px;
+    transition: 0.3s;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+  }
+
+ /* Style the Image Used to Trigger the Modal */
+ #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px 0.2px rgb(0, 0, 0);
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    height: 150px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.3s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  } 
