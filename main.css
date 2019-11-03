@@ -11,11 +11,13 @@
   }
 
 .header {
-    background-color: #b3b3b3;
-    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
+    background-image: url('/billeder/worldmap.svg');
+    background-color: #d7e5ff;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 10px;
+    float: center;
 }
 
 .footer {
@@ -69,13 +71,13 @@ a:link {
   }
   
   a:hover {
-    color: darkred;
+    color: darkblue;
     background-color: transparent;
     text-decoration: underline;
   }
   
   a:active {
-    color: darkred;
+    color: darkblue;
     background-color: transparent;
     text-decoration: underline;
   }
