@@ -1,18 +1,20 @@
 body {
-  background-image: linear-gradient(#43C6AC, #B06AB3);
+    background-image: linear-gradient(#F2EBBF, #f2ebbf);
 }
 
 .column {
     float: left;
     width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
 .header {
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
@@ -20,7 +22,7 @@ body {
     border-bottom-left-radius: 15px;
     padding: 10px;
     float: center;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgb(92, 75, 81);
 }
 
 .footer {
@@ -43,7 +45,8 @@ body {
 h1 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    color: white;
+    font-size: 30px;
+    color: #8CBEB2;
 }
 
 h2 {
@@ -56,40 +59,44 @@ h2 {
 h3 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    color: white;
+    color: #30544c;
 }
 
 p {
     font-family: 'Lato', sans-serif;
-    color: white;
+    color: black;
 }
 
+
 /* Links */
+
 a:link {
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
-  }
-  
-  a:visited {
-    color: white;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
-  }
-  
-  a:hover {
-    color: darkblue;
+}
+
+a:hover {
+    color: #8CBEB2;
     background-color: transparent;
     text-decoration: underline;
-  }
-  
-  a:active {
-    color: darkblue;
+}
+
+a:active {
+    color: #8CBEB2;
     background-color: transparent;
     text-decoration: underline;
-  }
+}
+
 
 /*Gallery */
+
 div.gallery {
     margin: 5px;
     border: 1px solid #000000;
@@ -97,26 +104,26 @@ div.gallery {
     width: 180px;
     transition: 0.3s;
     background-color: rgba(255, 255, 255, 0.25);
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+}
+
+div.gallery:hover {
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
     background-color: white;
-  }
-  
-  div.gallery img {
+}
+
+div.gallery img {
     width: 100%;
     height: 100%;
     height: auto;
-  }
+}
 
-  div.gallery img:hover {
+div.gallery img:hover {
     cursor: pointer;
-  }
-  
-  div.desc {
+}
+
+div.desc {
     padding: 15px;
     text-align: center;
     font-family: 'Lato', sans-serif;
-  }
+}
